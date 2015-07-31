@@ -1,4 +1,5 @@
 require "rails_templatecache/engine"
 
-module RailsTemplatecache
+module RailsTemplateCache
+  mattr_accessor :templates
 end

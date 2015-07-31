@@ -1,0 +1,10 @@
+(function() {
+  angular
+    .module('rails_templatecache', [])
+    .run(['$templateCache', function($templateCache) {
+      <% environment.context_class.instance_eval { include ActionView::Helpers::JavaScriptHelper } %>
+      <% RailsTemplateCache.templates.each do |key, value| %>
+        $templateCache.put("<%= key %>", "<%= escape_javascript(value) %>");
+      <% end %>
+    }])
+})();
