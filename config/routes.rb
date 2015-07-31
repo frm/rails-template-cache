@@ -1,2 +1,2 @@
-RailsTemplatecache::Engine.routes.draw do
+RailsTemplateCache::Engine.routes.draw do
 end

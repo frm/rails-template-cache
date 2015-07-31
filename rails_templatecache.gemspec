@@ -6,12 +6,12 @@ require "rails_templatecache/version"
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = "rails_templatecache"
-  s.version     = RailsTemplatecache::VERSION
+  s.version     = RailsTemplateCache::VERSION
   s.authors     = ["Fernando Mendes"]
   s.email       = ["devfrmendes@gmail.com"]
   s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of RailsTemplatecache."
-  s.description = "TODO: Description of RailsTemplatecache."
+  s.summary     = "TODO: Summary of RailsTemplateCache."
+  s.description = "TODO: Description of RailsTemplateCache."
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]

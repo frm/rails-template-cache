@@ -1,4 +1,4 @@
-module RailsTemplatecache
+module RailsTemplateCache
   module ApplicationHelper
   end
 end
