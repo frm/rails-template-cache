@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
 
-  mount RailsTemplatecache::Engine => "/rails_templatecache"
+  get 'pages/index'
+  root to: 'pages#index'
+
+  mount RailsTemplateCache::Engine => "/rails_templatecache"
 end
