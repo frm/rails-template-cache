@@ -7,16 +7,19 @@ module RailsTemplateCache
       templates = ['app', 'assets', 'javascripts']
       templates_path = File.join(templates)
       base = Rails.root.join(templates_path)
+
       # TODO: Change this to a value in config
-      markups = "{#{%w(html).join(',')}}"
+      exts = "{#{ %w(slim html haml).join(',') }}"
 
       assets = {}
       # TODO: add a flag to allow/disallow deep recursive search
-      Dir.glob("#{base}/**/*.#{markups}").each do |f|
-        # TODO: Add Tilt preprocessors here
-        app.config.assets.depend_on(f)
-        key = f.split(/#{templates_path}\//).last
-        assets[key] = File.open(f).read.strip
+      Dir.glob("#{base}/**/*.#{exts}").each do |f|
+        # TODO: Add Tilt here
+        app.assets.depend_on(f) # TODO: fix caching here
+        match = f.match(/#{templates_path}\/(.*)(\.\w+)/)
+        key, ext = match[1], match[2]
+        # TODO: Add html compressor option
+        assets[key] = RailsTemplateCache::Template.new(f, ext)
       end
 
       RailsTemplateCache.templates = assets

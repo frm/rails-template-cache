@@ -15,3 +15,4 @@ gemspec
 gem 'pry'
 gem 'pry-byebug'
 gem 'angularjs-rails'
+gem 'slim-rails'
