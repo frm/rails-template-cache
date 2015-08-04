@@ -1,4 +1,6 @@
 module RailsTemplateCache
+  require 'htmlcompressor'
+
   class Template
     def initialize(file, markup, options = {})
       silence_warnings do
@@ -8,8 +10,13 @@ module RailsTemplateCache
     end
 
     def render
-      # TODO: Add html compressor option
-      @template.render
+      @opts[:compress] ? compress_html(@template.render) : @template.render
+    end
+  private
+
+    def compress_html(html)
+      @compressor ||= HtmlCompressor::Compressor.new
+      @compressor.compress(html)
     end
   end
 end
