@@ -134,4 +134,6 @@ DEPENDENCIES
   pry-byebug
   rails_templatecache!
   slim-rails
+  sprockets
+  sprockets-rails
   sqlite3

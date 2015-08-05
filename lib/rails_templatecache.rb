@@ -2,6 +2,8 @@ require "rails_templatecache/engine"
 
 module RailsTemplateCache
   mattr_accessor :templates
+  self.templates = {}
+
   autoload :Template, 'rails_templatecache/template'
 
   def self.setup(&block)
