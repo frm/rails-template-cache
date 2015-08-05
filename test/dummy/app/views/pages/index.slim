@@ -1,4 +1,7 @@
-h1 ng-app="myApp"
-  | Pages#index
+div ng-app="myApp"
+  h1
+    | Pages#index
   p
-  | Find me in app/views/pages/index.html.erb
+    | Find me in app/views/pages/index.html.erb
+  div ng-include="'templates/test_page.html'"
+

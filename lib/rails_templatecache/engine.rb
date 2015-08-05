@@ -7,7 +7,7 @@ module RailsTemplateCache
       RailsTemplateCache.setup do |rtc_config|
         rtc_config.compress_html = true
         rtc_config.templates_path = File.join( ['app', 'assets', 'javascripts'] )
-        rtc_config.extensions = %w(erb html slim)
+        rtc_config.extensions = %w(erb haml html slim)
       end
     end
 
