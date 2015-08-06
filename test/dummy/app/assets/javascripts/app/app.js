@@ -1,3 +1,3 @@
 (function() {
-  angular.module('sampleApp', ['rails-templatecache']);
+  angular.module('sampleApp', ['rails-template-cache']);
 })();

@@ -5,7 +5,7 @@ require 'sprockets/rails'
 require 'action_mailer/railtie'
 
 Bundler.require(*Rails.groups)
-require "rails-templatecache"
+require "rails-template-cache"
 
 module Dummy
   class Application < Rails::Application

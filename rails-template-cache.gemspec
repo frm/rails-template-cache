@@ -1,15 +1,15 @@
 $:.push File.expand_path("../lib", __FILE__)
 
 # Maintain your gem's version:
-require "rails-templatecache/version"
+require "rails-template-cache/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "rails-templatecache"
+  s.name        = "rails-template-cache"
   s.version     = RailsTemplateCache::VERSION
   s.authors     = ["Fernando Mendes"]
   s.email       = ["devfrmendes@gmail.com"]
-  s.homepage    = "https://github.com/frmendes/rails-templatecache"
+  s.homepage    = "https://github.com/frmendes/rails-template-cache"
   s.summary     = "Adding templates to Angular's templateCache with Rails."
   s.license     = "MIT"
 

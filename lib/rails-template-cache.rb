@@ -1,15 +1,15 @@
-require "rails-templatecache/engine"
+require "rails-template-cache/engine"
 
 module RailsTemplateCache
   mattr_accessor :templates
   self.templates = {}
 
-  autoload :Template, 'rails-templatecache/template'
+  autoload :Template, 'rails-template-cache/template'
 
   def self.setup(&block)
     set_config
-    yield @@config.rails_templatecache if block
-    @@config.rails_templatecache
+    yield @@config.rails_template_cache if block
+    @@config.rails_template_cache
   end
 
   def self.config
@@ -21,7 +21,7 @@ module RailsTemplateCache
   def self.set_config
     unless @config
       @@config = RailsTemplateCache::Engine::Configuration.new
-      @@config.rails_templatecache = ActiveSupport::OrderedOptions.new
+      @@config.rails_template_cache = ActiveSupport::OrderedOptions.new
     end
   end
 end

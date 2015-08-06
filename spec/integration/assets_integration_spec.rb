@@ -3,7 +3,7 @@ require 'rails_helper'
 describe "RailsTemplateCache inclusion", :type => :feature do
   before do
     @files = RailsTemplateCache.templates.keys
-    visit '/assets/rails-templatecache/rails-templatecache.js'
+    visit '/assets/rails-template-cache/rails-template-cache.js'
   end
 
   it "adds templates to angular templateCache" do

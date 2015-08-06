@@ -1,6 +1,6 @@
 (function() {
   angular
-    .module('rails-templatecache', [])
+    .module('rails-template-cache', [])
     .run(['$templateCache', function($templateCache) {
       <% environment.context_class.instance_eval { include ActionView::Helpers::JavaScriptHelper } %>
       <% RailsTemplateCache.templates.each do |key, template| %>

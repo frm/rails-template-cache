@@ -11,22 +11,22 @@ Usage
 First add it to your Gemfile:
 
 ```ruby
-gem "rails-templatecache"
+gem "rails-template-cache"
 ```
 
-You'll need to require `rails-templatecache` in your `application.js` file. Make sure you do it **before** requiring your app.
+You'll need to require `rails-template-cache` in your `application.js` file. Make sure you do it **before** requiring your app.
 
 ```javascript
 //= require angular
-//= require rails-templatecache/rails-templatecache
+//= require rails-template-cache/rails-template-cache
 //= require ./app/app
 //= require_tree ./app
 ```
 
-Finally, add `rails-templatecache` as a dependency in your module.
+Finally, add `rails-template-cache` as a dependency in your module.
 
 ```javascript
-angular.module('myApp', ['rails-templatecache']);
+angular.module('myApp', ['rails-template-cache']);
 ```
 
 You can now either refer to your templates via `templateUrl`:
@@ -45,7 +45,7 @@ Or via `ng-include`.
 <div ng-include="'path/to/template.html'"></div>
 ```
 
-Note that this path is based on the value provided in `config.rails_templatecache.templates_path` (see [configuration](#configuration)). **Always add `.html`to the file name**.
+Note that this path is based on the value provided in `config.rails_template_cache.templates_path` (see [configuration](#configuration)). **Always add `.html`to the file name**.
 
 Template Generation
 -----------
