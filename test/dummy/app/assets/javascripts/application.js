@@ -11,6 +11,6 @@
 // about supported directives.
 //
 //= require angular
-//= require rails_templatecache/rails_templatecache
+//= require rails-templatecache/rails-templatecache
 //= require app/app
 //= require_tree .
