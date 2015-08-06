@@ -1,5 +1,8 @@
 # RailsTemplateCache
 
+[![Gem Version](https://badge.fury.io/rb/rails-template-cache.svg)](http://badge.fury.io/rb/rails-template-cache)
+[![Build Status](https://travis-ci.org/frmendes/rails-template-cache.svg)](https://travis-ci.org/frmendes/rails-template-cache)
+
 RailsTemplateCache lets you add your templates to Angular's `$templateCache`, preventing your app from making a request everytime it needs to fetch a template.
 
 It was inspired on [pitr](https://github.com/pitr)'s [angular-rails-templates](https://github.com/pitr/angular-rails-templates), which currently works with Sprockets 2. This version is Sprockets 2 and 3 compatible. It also has no known issues with the [sprockets-es6](https://github.com/TannerRogalsky/sprockets-es6) gem.
@@ -131,3 +134,4 @@ Roadmap
 - [ ] Allow adding new templates without restarting the server.
 - [ ] Allow non-Tilt, custom templates.
 - [ ] Allow `htmlcompressor` options.
+
