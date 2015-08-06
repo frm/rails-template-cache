@@ -2,7 +2,11 @@ PATH
   remote: .
   specs:
     rails_templatecache (0.0.1)
-      rails (~> 4.2.1)
+      htmlcompressor
+      rails
+      railties
+      sprockets
+      tilt
 
 GEM
   remote: https://rubygems.org/
@@ -45,8 +49,6 @@ GEM
     angularjs-rails (1.4.3)
     arel (6.0.2)
     builder (3.2.2)
-    byebug (5.0.0)
-      columnize (= 0.9.0)
     capybara (2.4.4)
       mime-types (>= 1.16)
       nokogiri (>= 1.3.3)
@@ -55,8 +57,6 @@ GEM
       xpath (~> 2.0)
     childprocess (0.5.6)
       ffi (~> 1.0, >= 1.0.11)
-    coderay (1.1.0)
-    columnize (0.9.0)
     diff-lcs (1.2.5)
     erubis (2.7.0)
     ffi (1.9.8)
@@ -82,20 +82,12 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
-    method_source (0.8.2)
     mime-types (2.6.1)
     mini_portile (0.6.2)
     minitest (5.7.0)
     multi_json (1.11.2)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
-    pry (0.10.1)
-      coderay (~> 1.1.0)
-      method_source (~> 0.8.1)
-      slop (~> 3.4)
-    pry-byebug (3.2.0)
-      byebug (~> 5.0)
-      pry (~> 0.10)
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -162,14 +154,12 @@ GEM
       activesupport (>= 3.1, < 5.0)
       railties (>= 3.1, < 5.0)
       slim (~> 3.0)
-    slop (3.6.0)
     sprockets (3.2.0)
       rack (~> 1.0)
     sprockets-rails (2.3.2)
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (>= 2.8, < 4.0)
-    sqlite3 (1.3.10)
     temple (0.7.5)
     thor (0.19.1)
     thread_safe (0.3.5)
@@ -188,13 +178,8 @@ DEPENDENCIES
   capybara
   haml-rails
   htmlcompressor
-  pry
-  pry-byebug
   rails_templatecache!
   rspec-its
   rspec-rails
   selenium-webdriver
   slim-rails
-  sprockets
-  sprockets-rails
-  sqlite3
