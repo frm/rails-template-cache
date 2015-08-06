@@ -5,7 +5,7 @@ module RailsTemplateCache
     config.before_configuration do |app|
       # Setting default options for the setup
       RailsTemplateCache.setup do |rtc_config|
-        rtc_config.compress_html = true
+        rtc_config.compress_html = false
         rtc_config.templates_path = File.join( ['app', 'assets', 'javascripts'] )
         rtc_config.extensions = %w(erb haml html slim)
       end
