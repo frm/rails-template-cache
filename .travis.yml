@@ -11,6 +11,9 @@ matrix:
   allow_failures:
     - rvm: ruby-head
     - env: "RAILS_VERSION=master"
+before_install:
+  - "export DISPLAY=:99.0"
+  - "sh -e /etc/init.d/xvfb start"
 install:
   - bundle install
 notifications:
