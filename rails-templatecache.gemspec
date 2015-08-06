@@ -16,11 +16,9 @@ Gem::Specification.new do |s|
   s.files = Dir["{app,lib}/**/*", "MIT-LICENSE", "README.rdoc"]
   s.test_files = Dir["spec/**/*"]
 
-  s.add_dependency "rails"
-  s.add_dependency "railties"
-  s.add_dependency "sprockets"
+  s.add_dependency "railties", ">= 3.0"
+  s.add_dependency "sprockets", ">= 2.0"
   s.add_dependency "tilt"
-  s.add_dependency "htmlcompressor"
 
   s.add_development_dependency "rspec-rails"
   s.add_development_dependency "rspec-its"
