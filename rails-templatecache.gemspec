@@ -9,9 +9,8 @@ Gem::Specification.new do |s|
   s.version     = RailsTemplateCache::VERSION
   s.authors     = ["Fernando Mendes"]
   s.email       = ["devfrmendes@gmail.com"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of RailsTemplateCache."
-  s.description = "TODO: Description of RailsTemplateCache."
+  s.homepage    = "https://github.com/frmendes/rails-templatecache"
+  s.summary     = "Adding templates to Angular's templateCache with Rails."
   s.license     = "MIT"
 
   s.files = Dir["{app,lib}/**/*", "MIT-LICENSE", "README.rdoc"]
