@@ -12,4 +12,5 @@
 //
 //= require angular
 //= require rails_templatecache/rails_templatecache
+//= require app/app
 //= require_tree .
