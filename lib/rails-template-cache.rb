@@ -1,10 +1,9 @@
+require "rails-template-cache/template"
 require "rails-template-cache/engine"
 
 module RailsTemplateCache
   mattr_accessor :templates
-  self.templates = {}
-
-  autoload :Template, 'rails-template-cache/template'
+  self.templates ||= {}
 
   def self.setup(&block)
     set_config
