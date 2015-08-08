@@ -18,3 +18,6 @@ install:
   - bundle install
 notifications:
   email: false
+branches:
+  only:
+    - master
