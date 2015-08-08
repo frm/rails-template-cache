@@ -3,9 +3,11 @@
     .module('rails-template-cache', [])
     .run(['$templateCache', function($templateCache) {
       <% environment.context_class.instance_eval { include ActionView::Helpers::JavaScriptHelper } %>
+      <% binding.pry %>
       <% RailsTemplateCache.templates.each do |key, template| %>
-        <% depend_on template.source_file %>
-        $templateCache.put("<%= key %>", "<%= escape_javascript(template.render) %>");
+        <% depend_on(environment.find_asset(key).filename) %>
+        console.log("<%= key %>");
+        $templateCache.put("<%= key %>.html", "<%= escape_javascript(template) %>");
       <% end %>
     }])
 })();

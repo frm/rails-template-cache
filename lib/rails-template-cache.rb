@@ -1,4 +1,6 @@
 require "rails-template-cache/template"
+require "rails-template-cache/transformer"
+require "rails-template-cache/html_processor"
 require "rails-template-cache/engine"
 
 module RailsTemplateCache
