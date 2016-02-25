@@ -8,6 +8,7 @@ module RailsTemplateCache
         rtc_config.compress_html = false
         rtc_config.templates_path = File.join( ['app', 'assets', 'javascripts'] )
         rtc_config.extensions = %w(erb haml html slim)
+        rtc_config.prepend_client_path = ''
       end
     end
 
@@ -17,7 +18,7 @@ module RailsTemplateCache
 
       Dir.glob("#{base}/**/*.#{exts}").each do |f|
         key, ext = RailsTemplateCache::Template
-          .asset_data(f, config.rails_template_cache.templates_path)
+          .asset_data(f, config.rails_template_cache.templates_path, config.rails_template_cache.prepend_client_path)
 
         RailsTemplateCache.templates[key] = RailsTemplateCache::Template
           .new(f, ext, compress: config.rails_template_cache.compress_html)
