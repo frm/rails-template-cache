@@ -5,12 +5,12 @@ require "rails-template-cache/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "rails-template-cache"
+  s.name        = "rails-template-cache-senexx"
   s.version     = RailsTemplateCache::VERSION
   s.authors     = ["Fernando Mendes"]
   s.email       = ["devfrmendes@gmail.com"]
   s.homepage    = "https://github.com/frmendes/rails-template-cache"
-  s.summary     = "Adding templates to Angular's templateCache with Rails."
+  s.summary     = "Adding templates to Angular's templateCache with Rails. Also in this fork we added an option to configure the path sent to angular"
   s.license     = "MIT"
 
   s.files = Dir["{app,lib}/**/*", "MIT-LICENSE", "README.rdoc"]

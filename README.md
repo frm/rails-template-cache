@@ -89,6 +89,7 @@ RailsTemplateCache.setup do |config|
   config.templates_path = File.join( ['app', 'assets', 'javascripts'] )
   config.extensions = %w(erb haml html slim)
   config.compress_html = false
+  config.prepend_client_path = ''
 end
 ```
 
@@ -118,6 +119,12 @@ Defaults to `false`.
 
 Note that the gem is still in active development and being ported, so beware of this use.
 
+
+### Prepend Client Path
+
+If you are updating an existing application, you might need to change the starting path that angular receives so it will work with your existing templateUrl settings.
+
+Defaults to empty string, so nothing will automatically be prepended.
 
 Known Issues
 -------
