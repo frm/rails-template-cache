@@ -1,5 +1,6 @@
 require "rails-template-cache/template"
 require "rails-template-cache/engine"
+require "rails-template-cache/version"
 
 module RailsTemplateCache
   mattr_accessor :templates
