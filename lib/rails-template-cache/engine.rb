@@ -1,3 +1,5 @@
+require "rails-template-cache/version"
+
 module RailsTemplateCache
   class Engine < ::Rails::Engine
     isolate_namespace RailsTemplateCache
